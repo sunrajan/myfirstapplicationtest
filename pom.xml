@@ -35,6 +35,13 @@
 			<groupId>org.springframework.boot</groupId>
 
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+		<exclusion>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+		</exclusion>
+
+	</exclusions>
 
 		</dependency>
 	</dependencies>
@@ -59,15 +66,7 @@
 
 				<artifactId>maven-war-plugin</artifactId>
 
-				<configuration>
 
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-
-					<outputDirectory>target</outputDirectory>
-
-					<warName>ROOT</warName>
-
-				</configuration>
 
 			</plugin>
 
