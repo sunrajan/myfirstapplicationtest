@@ -13,6 +13,8 @@ public class testcontroller {
 
 	public String home() {
 
+		System.out.println(" Log section with out context or /");
+		
 	return "Spring boot is working! great !!";
 
 	}
@@ -21,6 +23,7 @@ public class testcontroller {
 
 	public String home1() {
 
+		System.out.println(" Log section with  context /text");
 	return "Spring boot is test working! great !!";
 
 	}
