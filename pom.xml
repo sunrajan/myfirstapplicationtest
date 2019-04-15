@@ -32,23 +32,12 @@
 
 	<properties>
 
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 		<java.version>1.8</java.version>
 
 	</properties>
 
 	<dependencies>
 
-		<dependency>
-
-			<groupId>org.springframework.boot</groupId>
-
-			<artifactId>spring-boot-starter-actuator</artifactId>
-
-		</dependency>
 
 		<dependency>
 
@@ -67,12 +56,16 @@
 			<scope>test</scope>
 
 		</dependency>
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+        </dependency>
 
 	</dependencies>
 
 	<build>
 
-    <finalName>ROOT</finalName>
+    <finalName>myfirstapplicationtest</finalName>
 
 		<plugins>
 
