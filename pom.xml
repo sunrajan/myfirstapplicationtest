@@ -45,6 +45,10 @@
 					<artifactId>spring-boot-starter-tomcat</artifactId>
 
 				</exclusion>
+				 <exclusion>
+               <groupId>org.apache.tomcat.embed</groupId>
+               <artifactId>tomcat-embed-websocket</artifactId>
+           </exclusion>
 
 			</exclusions>
 
