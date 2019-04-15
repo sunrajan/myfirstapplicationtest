@@ -10,17 +10,35 @@
 
 	<packaging>war</packaging>
 
+	<name>springdemo</name>
+
+	<description>Demo project for Spring Boot</description>
+
+
+
 	<parent>
 
 		<groupId>org.springframework.boot</groupId>
 
 		<artifactId>spring-boot-starter-parent</artifactId>
 
-		<version>1.3.3.RELEASE</version>
+		<version>2.0.3.RELEASE</version>
+
+		<relativePath/> <!-- lookup parent from repository -->
 
 	</parent>
 
 
+
+	<properties>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<java.version>1.8</java.version>
+
+	</properties>
 
 	<dependencies>
 
@@ -28,47 +46,33 @@
 
 			<groupId>org.springframework.boot</groupId>
 
-			<artifactId>spring-boot-starter-web</artifactId>
-
-			<exclusions>
-
-				<exclusion>
-
-					<groupId>org.springframework.boot</groupId>
-
-					<artifactId>spring-boot-starter-tomcat</artifactId>
-
-				</exclusion>
-
-			</exclusions>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 
 		</dependency>
 
 		<dependency>
 
-			<groupId>javax.servlet</groupId>
+			<groupId>org.springframework.boot</groupId>
 
-			<artifactId>javax.servlet-api</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 
-			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+
+			<groupId>org.springframework.boot</groupId>
+
+			<artifactId>spring-boot-starter-test</artifactId>
+
+			<scope>test</scope>
 
 		</dependency>
 
 	</dependencies>
 
-
-
-	<properties>
-
-		<java.version>1.8</java.version>
-
-	</properties>
-
-
-
-
-
 	<build>
+
+    <finalName>ROOT</finalName>
 
 		<plugins>
 
@@ -80,54 +84,8 @@
 
 			</plugin>
 
-			<plugin>
-
-                <groupId>org.apache.maven.plugins</groupId>
-
-                <artifactId>maven-war-plugin</artifactId>
-
-                <version>2.3</version>
-
-                <configuration>
-
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-
-                    <outputDirectory>target</outputDirectory>
-
-              		  <warName>ROOT</warName>
-
-                </configuration>
-
-            </plugin>
-
 		</plugins>
 
 	</build>
-
-
-
-	<repositories>
-
-		<repository>
-
-			<id>spring-releases</id>
-
-			<url>https://repo.spring.io/libs-release</url>
-
-		</repository>
-
-	</repositories>
-
-	<pluginRepositories>
-
-		<pluginRepository>
-
-			<id>spring-releases</id>
-
-			<url>https://repo.spring.io/libs-release</url>
-
-		</pluginRepository>
-
-	</pluginRepositories>
 
 </project>
