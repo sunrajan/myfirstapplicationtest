@@ -8,9 +8,9 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
@@ -23,5 +23,10 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/tibcoBE5_3/bw/5.13/lib/couchbaseutil-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/tibcoBE5_3/bw/5.13/lib/original-couchbaseutil-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/tibcoBE5_3/bw/5.13/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/tibcoBE5_3/bw/5.13/lib/hawtbuf-1.11.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
